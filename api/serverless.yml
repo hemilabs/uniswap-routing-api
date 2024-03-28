@@ -16,6 +16,7 @@ functions:
       - http: 
           method: post
           path: /v2/quote
+          cors: true
     handler: ./index.post
     timeout: 30
 
