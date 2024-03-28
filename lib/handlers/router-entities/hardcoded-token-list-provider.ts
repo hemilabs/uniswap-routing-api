@@ -50,8 +50,8 @@ const nativeTokens = [
 ]
 
 const tokenList: TokenList = {
-  keywords: ['default', 'uniswap'],
-  name: 'Uniswap Labs Default',
+  keywords: ['default', 'hemi'],
+  name: 'Hemi Default',
   tags: {},
   timestamp: '2023-12-13T18:25:25.830Z',
   tokens: tokens.concat(nativeTokens),
