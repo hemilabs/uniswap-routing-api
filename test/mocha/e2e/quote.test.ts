@@ -2476,6 +2476,7 @@ describe('quote', function () {
     [ChainId.ZORA_SEPOLIA]: () => WNATIVE_ON(ChainId.ZORA_SEPOLIA),
     [ChainId.ROOTSTOCK]: () => WNATIVE_ON(ChainId.ROOTSTOCK),
     [ChainId.BLAST]: () => WNATIVE_ON(ChainId.BLAST),
+    [ChainId.HEMI_SEPOLIA]: () => WNATIVE_ON(ChainId.HEMI_SEPOLIA)
   }
 
   // TODO: Find valid pools/tokens on optimistic kovan and polygon mumbai. We skip those tests for now.
