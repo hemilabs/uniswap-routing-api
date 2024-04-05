@@ -23,7 +23,15 @@
     "outDir": "./dist",
     "allowJs": true,
     "typeRoots": ["./node_modules/@types"],
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@uniswap/sdk-core": ["./node_modules/@hemilabs/sdk-core"],
+      "@uniswap/sdk-core/*": ["./node_modules/@hemilabs/sdk-core/*"],
+      "@uniswap/smart-order-router": ["./node_modules/@hemilabs/smart-order-router"],
+      "@uniswap/smart-order-router/*": ["./node_modules/@hemilabs/smart-order-router/*"],
+      "@uniswap/universal-router-sdk": ["./node_modules/@hemilabs/universal-router-sdk"],
+      "@uniswap/universal-router-sdk/*": ["./node_modules/@hemilabs/universal-router-sdk/*"]
+    }
   },
   "exclude": ["cdk.out", "./dist/**/*"]
 }
