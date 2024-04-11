@@ -93,7 +93,7 @@
     "@hemilabs/sdk-core": "4.2.0-beta.2",
     "@hemilabs/smart-order-router": "3.26.1-beta.1",
     "@uniswap/token-lists": "^1.0.0-beta.33",
-    "@hemilabs/universal-router-sdk": "1.8.2-beta.1",
+    "@hemilabs/universal-router-sdk": "1.8.2-beta.3",
     "@uniswap/v2-sdk": "^4.3.0",
     "@uniswap/v3-periphery": "^1.4.4",
     "@uniswap/v3-sdk": "^3.11.0",
