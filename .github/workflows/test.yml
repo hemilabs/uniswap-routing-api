@@ -9,11 +9,10 @@ on:
 jobs:
   test:
     name: Run tests
+    if: false
     runs-on: ubuntu-latest
 
     steps:
-      # Disable tests for fork
-      if: false
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Set up node
