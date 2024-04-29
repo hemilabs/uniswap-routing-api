@@ -31,3 +31,11 @@ provider:
   region: ${opt:region,env:AWS_REGION,'eu-central-1'}
   runtime: nodejs20.x
   stage: ${opt:stage,env:STAGE,'dev'}
+  iam:
+    role:
+      statements:
+        - Effect: 'Allow'
+          Action:
+            - 's3:GetObject'
+            - 's3:PutObject'
+          Resource: '*'
