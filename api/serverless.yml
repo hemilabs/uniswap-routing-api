@@ -29,7 +29,7 @@ provider:
     WEB3_RPC_743111: ${env:WEB3_RPC_743111, ''}
   name: aws
   region: ${opt:region,env:AWS_REGION,'eu-central-1'}
-  runtime: nodejs20.x
+  runtime: nodejs16.x
   stage: ${opt:stage,env:STAGE,'dev'}
   iam:
     role:

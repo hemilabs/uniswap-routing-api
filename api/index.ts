@@ -65,7 +65,6 @@ export const post = async function (event: APIGatewayProxyEvent, context: Contex
       queryStringParameters: expectedQueryStringParameters,
     }
     const response = await quoteHandler.handler(newEvent, context)
-    //throw new Error('fooobar')
     // Uniswap interface expects a slightly different response structure, due to unified-routing-api usage.
     // Let's mutate it to match the expected response.
     const quote = JSON.parse(response.body)
