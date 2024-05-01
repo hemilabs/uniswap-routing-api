@@ -13,10 +13,20 @@ custom:
 functions:
   get-quote:
     events:
-      - http: 
+      - http:
           method: post
           path: /v2/quote
-          cors: true
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
+              - x-request-source
+            allowCredentials: false
     handler: ./index.post
     timeout: 30
 
