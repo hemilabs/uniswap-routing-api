@@ -11,7 +11,7 @@ const hemi = {
   nativeCurrency: {
     decimals: 18,
     name: 'Testnet Hemi Ether',
-    symbol: 'thETH',
+    symbol: 'ETH',
   },
 }
 
@@ -35,13 +35,13 @@ const tokens: TokenInfo[] = [
     logoURI:
       'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png',
     name: 'Testnet Hemi DAI',
-    symbol: 'thDAI',
+    symbol: 'DAI',
   },
 ]
 
 const nativeTokens = [
   {
-    address: 'thETH',
+    address: 'ETH',
     chainId: hemi.id,
     decimals: hemi.nativeCurrency.decimals,
     name: hemi.nativeCurrency.name,
