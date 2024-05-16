@@ -36,7 +36,7 @@ import _ from 'lodash'
 import NodeCache from 'node-cache'
 import UNSUPPORTED_TOKEN_LIST from './../config/unsupported.tokenlist.json'
 import { BaseRInj, Injector } from './handler'
-import { HardcodedTokenListProvider } from './router-entities/hardcoded-token-list-provider'
+import { HemiTokenListProvider } from './router-entities/hemi-token-list-provider'
 import { DynamoRouteCachingProvider } from './router-entities/route-caching/dynamo-route-caching-provider'
 import { DynamoDBCachingV3PoolProvider } from './pools/pool-caching/v3/dynamo-caching-pool-provider'
 import { TrafficSwitchV3PoolProvider } from './pools/provider-migration/v3/traffic-switch-v3-pool-provider'
@@ -207,7 +207,7 @@ export abstract class InjectorSOR<Router, QueryParams> extends Injector<
           )
 
           const [tokenListProvider, blockedTokenListProvider] = await Promise.all([
-            HardcodedTokenListProvider.fromTokenList(chainId),
+            HemiTokenListProvider.fromTokenList(chainId),
             CachingTokenListProvider.fromTokenList(chainId, UNSUPPORTED_TOKEN_LIST as TokenList, blockedTokenCache),
           ])
 
