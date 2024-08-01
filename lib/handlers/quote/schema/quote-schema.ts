@@ -145,7 +145,7 @@ export const HemiQuoteQueryParamsJoi = Joi.object({
         // Frontend sends multiple unsupported protocols, but we just support V3
         // which is enforced in our api.
         protocols: Joi.array().items(Joi.string()).required(),
-        recipient: Joi.string().alphanum().max(42).required(),
+        recipient: Joi.string().alphanum().max(42).optional(),
         routingType: Joi.string().optional(),
       })
     )
